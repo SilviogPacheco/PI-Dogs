@@ -1,0 +1,28 @@
+.paginado {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.paginado ul {
+  display: flex;
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+  margin: 0; /* Elimina el margen predeterminado de la lista */
+  list-style-type: none; /* Para quitar los puntos de la lista */
+}
+
+.paginado li {
+  margin-right: 8px; /* Ajusta el espaciado entre los elementos de la lista */
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 1.5em;
+}
+
+.paginado a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  color: #050404; /* Color del texto del enlace */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}

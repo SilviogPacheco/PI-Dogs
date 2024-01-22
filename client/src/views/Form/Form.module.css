@@ -1,0 +1,37 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+input {
+  border: 2px solid #1b1b1b;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.checksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #f0e5e3;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 410px;
+  margin: auto;
+  max-height: 10vh;
+  overflow: auto; /* Para desplazamiento del contenedor */
+}
+
+.checkbox {
+  width: 50%; /* Ancho del contenedor de tipo (ajusta según el número de columnas deseadas) */
+  box-sizing: border-box; /* Asegura que el espacio de margen se cuente dentro del ancho */
+  overflow: hidden; /* Oculta el desbordamiento de texto */
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Espacio entre los elementos */
+}
