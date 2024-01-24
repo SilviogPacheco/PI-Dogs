@@ -6,7 +6,7 @@ const Card = ({ image, name, temperament, weight }) => {
       <span className={style.name}>{name}</span>
       <div className={style.card}>
         <div className={style.imageContainer}>
-          <img src={image} />
+          <img src={image} alt={name} />
         </div>
       </div>
       <div>

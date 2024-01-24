@@ -14,6 +14,8 @@ const DogInfoApi = async () => {
       image: dog.image.url,
       temperament: dog.temperament,
       weight: dog.weight.metric + " kg",
+      height: dog.height.metric + " cm",
+      life_span: dog.life_span,
     };
   });
   return dogs;

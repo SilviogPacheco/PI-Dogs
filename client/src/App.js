@@ -16,11 +16,11 @@ function App() {
   useEffect(() => {
     dispatch(getTemperaments());
     dispatch(getDogs());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
-      {pathname !== "/" && <NavBar />}
+      {pathname === "/home" && <NavBar />}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />

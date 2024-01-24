@@ -25,7 +25,7 @@ const NavBar = () => {
   useEffect(() => {
     dispatch(filter({ temp: filtros.temperaments, origin: filtros.origin }));
     setOrden("default");
-  }, [filtros]);
+  }, [dispatch, filtros]);
 
   const handlerOrder = (event) => {
     setOrden(event.target.value);
@@ -78,9 +78,6 @@ const NavBar = () => {
       <div className={style.buttonsContainer}>
         <NavLink className={style.buttons} to="/home">
           <span>Home</span>
-        </NavLink>
-        <NavLink className={style.buttons} to="/about">
-          <span>About</span>
         </NavLink>
       </div>
     </div>

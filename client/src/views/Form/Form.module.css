@@ -1,37 +1,84 @@
 .formContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-label {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.2em;
-}
-
-input {
-  border: 2px solid #1b1b1b;
+.form {
+  background-color: #bc792ced;
+  width: 35%;
+  padding: 20px;
   border-radius: 10px;
-  padding: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+}
+
+.titleform {
+  text-align: center;
+}
+
+.labelProperties {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.inputsform {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 0.8em;
 }
 
 .checksContainer {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #f0e5e3;
-  border-radius: 5px;
-  padding: 10px;
-  max-width: 410px;
-  margin: auto;
-  max-height: 10vh;
-  overflow: auto; /* Para desplazamiento del contenedor */
+  max-height: 15vh;
+  overflow: auto;
+  border: 1px solid black;
 }
 
 .checkbox {
-  width: 50%; /* Ancho del contenedor de tipo (ajusta según el número de columnas deseadas) */
-  box-sizing: border-box; /* Asegura que el espacio de margen se cuente dentro del ancho */
-  overflow: hidden; /* Oculta el desbordamiento de texto */
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.labelCheck {
+  font-size: 0.7em;
+  background-color: #e6e6e6;
+  padding: 5px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  margin-bottom: 5px; /* Espacio entre los elementos */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.labelCheck:hover {
+  background-color: #d0d0d0;
+}
+
+.buttonform,
+.buttonVolver {
+  background-color: #d39d08;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  margin-top: 1em;
+}
+
+.buttonform:hover,
+.buttonVolver:hover {
+  background-color: #a05607;
+}
+
+.buttonVolver {
+  float: left;
 }

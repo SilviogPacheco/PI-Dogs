@@ -1,14 +1,10 @@
 import Cards from "../../components/Cards/Cards";
 import Paginado from "../../components/Paginado/Paginado";
-import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getDogs, getTemperaments } from "../../redux/actions";
-import style from "./Home.module.css";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Home = () => {
-  const dispatch = useDispatch();
   const dogs = useSelector((state) => state.searchDogs);
-  const order = useSelector((state) => state.order);
 
   /*Paginado */
 

@@ -16,14 +16,14 @@ const Landing = () => {
         <h1 className={style.title}>Mundo Perruno</h1>
       </div>
       <div className={style.perrito}>
-        <img className={style.imgPerrito} src={landingImagen} />
+        <img className={style.imgPerrito} src={landingImagen} alt="perrito" />
       </div>
       <div className={style.buttonContainer}>
-        <img className={style.huellas} src={huellita} />
+        <img className={style.huellas} src={huellita} alt="huellitas" />
         <button className={style.button} onClick={handleToHome}>
           Ingresar
         </button>
-        <img className={style.huellas} src={huellita} />
+        <img className={style.huellas} src={huellita} alt="huellitas" />
       </div>
     </div>
   );

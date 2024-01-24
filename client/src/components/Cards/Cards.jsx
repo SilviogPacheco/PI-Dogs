@@ -12,7 +12,12 @@ const Cards = ({ dogs }) => {
             id={dog.id}
             name={dog.name}
             image={dog.image}
-            temperament={dog.temperament}
+            temperament={
+              dog.temperament ||
+              (dog.Temperaments &&
+                dog.Temperaments.map((temp) => temp.name).join(", ")) ||
+              "No temperament"
+            }
             weight={dog.weight}
           />
         </NavLink>

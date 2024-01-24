@@ -13,8 +13,10 @@ const SearchBar = () => {
   };
 
   const searchDog = () => {
-    dispatch(getDogsByName(name));
-    setName("");
+    if (name) {
+      dispatch(getDogsByName(name));
+      setName("");
+    }
   };
   return (
     <div className={style.searchBarContainer}>
